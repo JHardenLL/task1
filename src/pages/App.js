@@ -64,7 +64,7 @@ function Comment(props) {
           <p>{props.val}</p>
           {/* <input className="button1" onClick={localStorage.removeItem(localStorage.key(props.k))} type="button" value="删除"></input> */}
           <input className="button1" type="button" value="删除"></input>
-      </form>
+      </form> 
     </div>
   );
 
