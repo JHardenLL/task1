@@ -51,6 +51,10 @@ export default function App() {
 
 function Comment(props) {
   
+  // renew= () =>{
+  //   ReactDOM.render(<App/>,document.getElementById('root'));
+  // };
+
   return (
 
     <div className="pinglunqv">
@@ -58,11 +62,13 @@ function Comment(props) {
           <h3 className="title"><b>{props.k}</b></h3>
           
           <p>{props.val}</p>
-          <input className="button1" onClick={localStorage.removeItem(localStorage.key(props.k))} type="button" value="删除"></input>
-          {/* <input className="button1" type="button" value="删除"></input> */}
+          {/* <input className="button1" onClick={localStorage.removeItem(localStorage.key(props.k))} type="button" value="删除"></input> */}
+          <input className="button1" type="button" value="删除"></input>
       </form>
     </div>
   );
+
+  
 }
 
 function Commentast(){
